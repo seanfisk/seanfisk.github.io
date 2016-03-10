@@ -8,7 +8,7 @@ There are two ways to publish a Jekyll blog to GitHub Pages:
 
 #### Use GitHub Pages build server
 
-For this technique, the Jekyll source is pushed on the GitHub Pages branch (`master` for user/organization pages, `gh-pages` for project pages). GitHub then uses its software to generate the HTML. If using this technique, Jekyll suggests using the [github-pages gem][] to pin your dependencies to exactly the software GitHub is using to generate your site.
+For this technique, the Jekyll source is pushed on the GitHub Pages branch (`master` for user/organization pages, `gh-pages` for project pages). GitHub then uses its software to generate the HTML. If using this technique, Jekyll suggests using the [github-pages gem][], ([which suggests][ruby-build-github suggestion] using [ruby-build-github][]) to pin your dependencies to exactly the software GitHub is using to generate your site.
 
 Although this makes deployment easier, it has a few disadvantages:
 
@@ -17,6 +17,8 @@ Although this makes deployment easier, it has a few disadvantages:
 - Jekyll plugins [cannot be used on the GitHub Pages build server][].
 
 [github-pages gem]: https://jekyllrb.com/docs/github-pages/#deploying-jekyll-to-github-pages
+[ruby-build-github suggestion]: https://github.com/github/pages-gem#1-ruby
+[ruby-build-github]: https://github.com/parkr/ruby-build-github
 [overrides the source setting]: https://help.github.com/articles/generic-jekyll-build-failures/#source-setting
 [cannot be used on the GitHub Pages build server]: https://jekyllrb.com/docs/plugins/
 
