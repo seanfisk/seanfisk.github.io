@@ -1,0 +1,13 @@
+# Octopress/Jekyll
+
+/_site/
+.sass-cache/
+.jekyll-metadata
+/_deploy.yml
+
+# Bundler
+/.bundle/
+/bin/
+
+# rbenv
+/.ruby-version
