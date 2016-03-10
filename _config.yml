@@ -1,0 +1,14 @@
+source: src
+destination: build
+
+# Site settings
+title: Sean Fisk
+email: sean@seanfisk.com
+description: Personal blog of Sean Fisk
+url: "http://seanfisk.com" # the base hostname & protocol for your site
+github_username: seanfisk
+
+# Build settings
+markdown: kramdown
+
+permalink: /:year/:month/:title
