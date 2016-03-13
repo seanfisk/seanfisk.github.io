@@ -5,10 +5,68 @@ destination: build
 title: Sean Fisk
 email: sean@seanfisk.com
 description: Personal blog of Sean Fisk
-url: "http://seanfisk.com" # the base hostname & protocol for your site
-github_username: seanfisk
+url: "https://seanfisk.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
 
 permalink: /:year/:month/:title
+
+# Theme configuration
+# See here: http://aronbordin.com/neo-hpstr-jekyll-theme/theme-setup/
+
+disqus_shortname: seanfisk
+reading_time: true # if true, shows the estimated reading time for a post
+words_per_minute: 200
+logo: images/logo.png # logo visible in the topbar
+
+# draw your top menu here
+# each item must have a title and a url.
+#   To list post categories. use type: 'categories'
+#   To create sub categories. add a submenu item
+# See the example
+menu:
+  - title: 'Home'
+    url: '/'
+
+# Owner/author information
+owner:
+  name:           Sean Fisk
+  site:           https://seanfisk.com
+  avatar:         images/avatar.jpg
+  bio:            "Software developer, musician, outdoor enthusiast, and friend"
+  email:          sean@seanfisk.com
+  # facebook:
+  github: seanfisk
+  # stackexchange:
+  # linkedin:
+  # google plus id, include the '+', eg +AronBordin
+  # google_plus:    +yourid
+
+social:
+  - title: "GitHub"
+    url: "https://github.com/seanfisk/"
+  # - title: "linkedin"
+  #   url: "https://br.linkedin.com/in/aronbordin"
+# Background image to be tiled on all pages
+background:
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Detroit
+locale: en_US
+future: true
+gems:
+  - jekyll-sitemap
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Amount of post to show on home page
+paginate: 5
+
+# if true, shows the floating share buttons
+float_share: true
