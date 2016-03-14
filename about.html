@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
 <head>
 <meta charset="utf-8">
-<title>Search &#8211; Sean Fisk's Personal Blog</title>
+<title>About &#8211; Sean Fisk's Personal Blog</title>
 <meta name="description" content="Sean Fisk's Personal Blog">
 
 
@@ -14,16 +14,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Search">
+<meta property="og:title" content="About">
 <meta property="og:description" content="Sean Fisk's Personal Blog">
-<meta property="og:url" content="https://seanfisk.com/search/">
+<meta property="og:url" content="https://seanfisk.com/about">
 <meta property="og:site_name" content="Sean Fisk's Personal Blog">
 <meta property="og:image" content="https://seanfisk.com/images/images/logo.png">
 
 
 
 
-<link rel="canonical" href="https://seanfisk.com/search/">
+<link rel="canonical" href="https://seanfisk.com/about">
 <link href="https://seanfisk.com/feed.xml" type="application/atom+xml" rel="alternate" title="Sean Fisk's Personal Blog Feed">
 
 <!-- http://t.co/dKP3o1e -->
@@ -62,7 +62,7 @@
 
 </head>
 
-<body id="post-index">
+<body id="page">
 
 <!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
 
@@ -94,7 +94,7 @@
 
         
             
-                <li class="header-item "><a href="/about"><h3>About</h3></a></li>
+                <li class="header-item active"><a href="/about"><h3>About</h3></a></li>
             
         
       
@@ -104,7 +104,7 @@
 <div class="entry-header">
   <div class="header-title">
     <div class="header-title-wrap">
-      <h1>Search</h1>
+      <h1>About</h1>
       
         <h2><span class="entry-date"><time>&nbsp;</time></span></h2>
       
@@ -137,29 +137,24 @@
 
 
 <div id="main" role="main">
-  <article>
-  <div style="text-align: center">
-    <h3>Finds a post by title, tag, category, date and url.</h3>
-    <input type="text" id="search-input"/>
-  </div>
-  <h3>Results:</h3>
-	<ul id="results-container">
-	</ul>
-</article><!-- /.hentry -->
+  <article class="hentry">
+    <div class="entry-content">
+      <p>This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at <a href="http://jekyllrb.com/">jekyllrb.com</a></p>
 
-<script type="text/javascript">
+      <footer class="entry-meta">
+        
+        <div class="social-share">
+  <ul class="socialcount socialcount-small inline-list">
+    <li class="facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https://seanfisk.com/about" title="Share on Facebook"><span class="count"><i class="fa fa-facebook-square"></i> Like</span></a></li>
+    <li class="twitter"><a href="https://twitter.com/intent/tweet?text=https://seanfisk.com/about" title="Share on Twitter"><span class="count"><i class="fa fa-twitter-square"></i> Tweet</span></a></li>
+    <li class="googleplus"><a href="https://plus.google.com/share?url=https://seanfisk.com/about" title="Share on Google Plus"><span class="count"><i class="fa fa-google-plus-square"></i> +1</span></a></li>
+  </ul>
+</div><!-- /.social-share -->
 
-  window.onload = function(){
-    new SimpleJekyllSearch({
-      searchInput: document.getElementById('search-input'),
-      resultsContainer: document.getElementById('results-container'),
-      json: '/search.json',
-      searchResultTemplate: '<li class="entry-title"><a href="{url}" title="{title}">{title}</a></li>'
-    });
-  }
-
-</script>
-
+      </footer>
+    </div><!-- /.entry-content -->
+    
+  </article>
 </div><!-- /#main -->
 
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -181,6 +176,7 @@
   ga('require', 'linkid', 'linkid.js');
   ga('send', 'pageview');
 </script>
+
 
 
 
