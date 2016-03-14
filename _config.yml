@@ -1,41 +1,37 @@
+# Global configuration
 source: src
 destination: build
+timezone: America/Detroit
+locale: en_US
+future: true
+markdown: kramdown
+sass:
+  style: compressed
 
 # Site settings
-title: Sean Fisk
-email: sean@seanfisk.com
-description: Personal blog of Sean Fisk
-url: "https://seanfisk.com" # the base hostname & protocol for your site
-
-# Build settings
-markdown: kramdown
-
+title: &title "Sean Fisk's Personal Blog"
+email: &email sean@seanfisk.com
+description: *title
 permalink: /:year/:month/:title
+url: &url https://seanfisk.com # base hostname & protocol
+
+# Plugin settings
+paginate: 5 # number of posts to show on homepage
 
 # Theme configuration
 # See here: http://aronbordin.com/neo-hpstr-jekyll-theme/theme-setup/
 
-disqus_shortname: seanfisk
 reading_time: true # if true, shows the estimated reading time for a post
 words_per_minute: 200
 logo: images/logo.png # logo visible in the topbar
 
-# draw your top menu here
-# each item must have a title and a url.
-#   To list post categories. use type: 'categories'
-#   To create sub categories. add a submenu item
-# See the example
-menu:
-  - title: 'Home'
-    url: '/'
-
-# Owner/author information
+# Owner information (for theme)
 owner:
-  name:           Sean Fisk
-  site:           https://seanfisk.com
-  avatar:         images/avatar.jpg
-  bio:            "Software developer, musician, outdoor enthusiast, and friend"
-  email:          sean@seanfisk.com
+  name: Sean Fisk
+  site: /about
+  avatar: images/avatar.jpg
+  bio: Software developer, musician, outdoor enthusiast, and friend
+  email: *email
   # facebook:
   github: seanfisk
   # stackexchange:
@@ -43,30 +39,23 @@ owner:
   # google plus id, include the '+', eg +AronBordin
   # google_plus:    +yourid
 
+# Draw your top menu here
+# Each item must have a title and a url.
+#   To list post categories. use type: 'categories'
+#   To create sub categories. add a submenu item
+# See the example
+menu:
+  - title: About
+    url: /about
+
 social:
-  - title: "GitHub"
-    url: "https://github.com/seanfisk/"
+  - title: GitHub
+    url: https://github.com/seanfisk
   # - title: "linkedin"
   #   url: "https://br.linkedin.com/in/aronbordin"
-# Background image to be tiled on all pages
-background:
 
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
+google_analytics: UA-19591513-5
+discus_shortname: seanfisk
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-timezone: America/Detroit
-locale: en_US
-future: true
-gems:
-  - jekyll-sitemap
-sass:
-  sass_dir: _sass
-  style: compressed
-
-# Amount of post to show on home page
-paginate: 5
-
-# if true, shows the floating share buttons
+# If true, shows the floating share buttons
 float_share: true
